@@ -1,5 +1,6 @@
 package com.java.collection.List;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListDemo {
@@ -55,14 +56,11 @@ public class LinkedListDemo {
 		
 		System.out.println("===============================");
 		
-//		for(int i=0; i<list.size();i++)
-//		{
-//			System.out.println(list.get(i));
-//		}
+		Iterator<Object> di = list.descendingIterator();
 		
-		for(Object aa:list)
+		while(di.hasNext())
 		{
-			System.out.println(aa);
+			System.out.println(di.next());
 		}
 	}
 
