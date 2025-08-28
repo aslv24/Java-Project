@@ -1,8 +1,9 @@
 package com.java.collection.List;
 
+import java.util.Enumeration;
 import java.util.Vector;
 
-public class VectorDemo {
+public class VectorDemo{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -55,14 +56,11 @@ public class VectorDemo {
 		
 		System.out.println("===============================");
 		
-//		for(int i=0; i<list.size();i++)
-//		{
-//			System.out.println(list.get(i));
-//		}
+		Enumeration<Object> e = list.elements();
 		
-		for(Object aa:list)
+		while(e.hasMoreElements())
 		{
-			System.out.println(aa);
+			System.out.println(e.nextElement());
 		}
 	}
 

@@ -1,13 +1,17 @@
 package com.java.collection.List;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class ArrayListDemo {
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		int b=100;
+		
+		System.out.println(b=100);
 
 		ArrayList<Object> list=new ArrayList<Object>();
 		
@@ -55,14 +59,18 @@ public class ArrayListDemo {
 		
 		System.out.println("===============================");
 		
-		for(int i=0; i<list.size();i++)
+		ListIterator<Object> li = list.listIterator();
+		
+		while(li.hasNext())
 		{
-			System.out.println(list.get(i));
+			System.out.println(li.next());
 		}
 		
-		for(Object aa:list)
+		System.out.println("==============================");
+		
+		while(li.hasPrevious())
 		{
-			System.out.println(aa);
+			System.out.println(li.previous());
 		}
 	}
 
