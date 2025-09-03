@@ -2,6 +2,8 @@ package com.java.oops.inheritDemo;
 
 public class ChildB extends ParentA{
 	
+	String name;
+	
 	public static void cb1()
 	{
 		
@@ -9,7 +11,10 @@ public class ChildB extends ParentA{
 
 	public void cb2()
 	{
-		
+		String name="admin";
+		System.out.println(name);
+		System.out.println(this.name);
+		System.out.println(super.name);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

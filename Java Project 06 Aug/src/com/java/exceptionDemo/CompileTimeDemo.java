@@ -3,7 +3,7 @@ package com.java.exceptionDemo;
 public class CompileTimeDemo {
 	
 	
-	public static void m1() throws InterruptedException
+	public static void m1() throws InterruptedException 
 	{
 		System.out.println(1);
 		Thread.sleep(2000);
@@ -14,6 +14,8 @@ public class CompileTimeDemo {
 		System.out.println(4);
 		Thread.sleep(2000);
 		System.out.println(5);
+		
+		
 	}
 
 	public static void main(String[] args) throws InterruptedException {

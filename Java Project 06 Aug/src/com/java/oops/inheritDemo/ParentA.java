@@ -2,6 +2,8 @@ package com.java.oops.inheritDemo;
 
 public class ParentA {
 	
+	String name;
+	
 	public static void m1()
 	{
 		
